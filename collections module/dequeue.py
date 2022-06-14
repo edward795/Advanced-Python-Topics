@@ -1,0 +1,32 @@
+from collections import deque
+
+de=deque([1,2,3,4])
+print(de)
+
+#operations append(),appendleft(),pop(),popleft()
+de.append(5)
+de.appendleft(6)
+print(de)
+de.pop()
+de.popleft()
+print(de)
+
+#operations index(),remove(),count()
+print(de.index(3,0,4))
+de.insert(1,5)
+print(de)
+de.remove(1)
+print(de)
+print(de.count(4))
+
+#operations extend(),extendleft(),reverse(),rotate()
+de.extend([7,8,9,10])
+print(de)
+de.extendleft([11,12,13,14])
+print(de)
+de.reverse()
+print(de)
+de.rotate(2)
+print(de)
+de.rotate(-4)
+print(de)
